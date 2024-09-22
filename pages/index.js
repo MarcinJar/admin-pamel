@@ -4,6 +4,11 @@ import ButtonInfo from "@/components/button/ButtonInfo";
 import ButtonPrimary from "@/components/button/ButtonPrimary";
 import ButtonSuccess from "@/components/button/ButtonSuccess";
 import ButtonWarning from "@/components/button/ButtonWarning";
+import Checkbox from "@/components/form/Checkbox";
+import Input from "@/components/form/Input";
+import Radio from "@/components/form/Radio";
+import Select from "@/components/form/Select";
+import Textarea from "@/components/form/Textarea";
 
 export default function Home() {
   return (
@@ -31,7 +36,7 @@ export default function Home() {
                 <div className="text-center my-5">
                   <Button>Przycisk bazowy</Button>
                 </div>
-                <div className="grid grid-cols-5 gap-2">
+                <div className="grid grid-cols-3 gap-2">
                   <ButtonSuccess>Zapisz</ButtonSuccess>
                   <ButtonDanger>Usuń</ButtonDanger>
                   <ButtonInfo>Zobacz</ButtonInfo>
@@ -40,8 +45,17 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="p-10 my-5 bg-red-300">
-              Tutaj pole formularza
+            <div className="p-10 my-5">
+              <div className="flex flex-col">
+                <h2 className="text-3xl mb-5">Pole formularza</h2>
+                <div className="grid grid-cols-1 ld:grid-cols-3 fap-4 lg:gap-2 text-left">
+                  <Input label="Pole tekstowe" placeholder="Wprowadź krótki tekst" name="input"/>
+                  <Select className="mt-3" label="Lista rozwijana" name="select" options={[{'value': 1, 'text': 'Pierwsza opcja'}, {'value': 2, 'text': 'Druga opcja'}]}/>
+                  <Textarea label="Pole tekstu rozszerzanego" placeholder="Wprowadź długi tekst" name="textarea" />
+                  <Checkbox label="Wybierz tę opcję" name="checkbox" />
+                  <Radio label="Zaznacz tę opcję" name="radio" />
+                </div>
+              </div>
             </div>
             <div className="p-10 my-5 bg-red-300">
               Tutaj odnośnik do logowania i rejstracji
