@@ -4,11 +4,13 @@ import ButtonInfo from "@/components/button/ButtonInfo";
 import ButtonPrimary from "@/components/button/ButtonPrimary";
 import ButtonSuccess from "@/components/button/ButtonSuccess";
 import ButtonWarning from "@/components/button/ButtonWarning";
+import Card from "@/components/card/Card";
 import Checkbox from "@/components/form/Checkbox";
 import Input from "@/components/form/Input";
 import Radio from "@/components/form/Radio";
 import Select from "@/components/form/Select";
 import Textarea from "@/components/form/Textarea";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -57,9 +59,16 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="p-10 my-5 bg-red-300">
-              Tutaj odnośnik do logowania i rejstracji
-            </div>
+            <Card title="Sprawdź nasz szablon" className="text-x">
+              <div className="flex justify-center space-x-2">
+                <Link href="/auth/login" className="btn btn-success">
+                  Zaloguj się
+                </Link>
+                <Link href="/auth/register" className="btn btn-primary">
+                  Zarejstruj
+                </Link>
+              </div>
+            </Card>
           </div>
       </div>
     </div>
