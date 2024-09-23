@@ -1,3 +1,5 @@
+import UserMenu from "@/components/menu/userMenu/UserMenu";
+
 export default function SecondaryNavbar() {
   return (
     <div className="flex items-center justify-between p-4 w-full test-sm bg-white border-b 
@@ -9,7 +11,7 @@ export default function SecondaryNavbar() {
         <div className="flex items-center cursor-pointer select-none">
           <div className="mr-1 text-gray-800 whitespace-nowrap flex items-center">
             <div className="font-bold">
-              UŻYTKOWNIK
+              <UserMenu/>
             </div>
           </div>
         </div>
