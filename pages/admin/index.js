@@ -2,6 +2,7 @@ import Card from "@/components/card/Card";
 import DefaultLayout from "@/components/layouts/defaultLayout/DefaultLayout";
 import AppStatus from "@/components/ui/appStatus/AppStatus";
 import CallToAction from "@/components/ui/callToAction/CallToAction";
+import Comments from "@/components/ui/comments/Comments";
 import Newsletter from "@/components/ui/newsletter/Newsletter";
 
 export default function Index() {
@@ -25,6 +26,7 @@ export default function Index() {
             url="/admin/contact">
           </CallToAction>
         </section>
+        <Comments/>
       </div>
     </DefaultLayout>
   )
