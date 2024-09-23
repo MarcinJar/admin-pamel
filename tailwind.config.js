@@ -11,6 +11,7 @@ module.exports = {
       xl: '1280px',
       "2xl": "1536px",
     },
+    preflight: true, // to resetuje domyślne style przeglądarki
   },
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
