@@ -1,15 +1,15 @@
-import LoginForm from "@/components/form/loginForm/LoginForm";
+import RegisterForm from "@/components/form/registerForm/RegisterForm";
 import Logo from "@/components/logo/Logo";
 
-export default function Login() {
+export default function Register() {
   return <>
-    <div className="flex items-center justify-center min-h-screen bg-blue-900">
+    <div className="flex items-center justify-center min-h-screen bg-green-900">
       <div>
         <div className="w-full flex justify-center">
           <Logo/>
         </div>
         <div className="w-full mt-3">
-          <LoginForm/>
+          <RegisterForm/>
         </div>
       </div>
     </div>
