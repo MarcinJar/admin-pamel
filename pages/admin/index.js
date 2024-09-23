@@ -1,6 +1,7 @@
 import Card from "@/components/card/Card";
 import DefaultLayout from "@/components/layouts/defaultLayout/DefaultLayout";
 import AppStatus from "@/components/ui/appStatus/AppStatus";
+import Newsletter from "@/components/ui/newsletter/Newsletter";
 
 export default function Index() {
   return (
@@ -10,6 +11,13 @@ export default function Index() {
           <AppStatus/>
         </div>
       </Card>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <section className="grid gap-4">
+          <Newsletter
+            title="Chcesz być na bierząco?"
+            subTitle="Powiadomienia o naszych produktach trafią bezpośrednio na Twoją skrzynkę e-mail!"/>
+        </section>
+      </div>
     </DefaultLayout>
   )
 }
