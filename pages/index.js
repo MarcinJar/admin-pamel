@@ -50,9 +50,9 @@ export default function Home() {
             <div className="p-10 my-5">
               <div className="flex flex-col">
                 <h2 className="text-3xl mb-5">Pole formularza</h2>
-                <div className="grid grid-cols-1 ld:grid-cols-3 fap-4 lg:gap-2 text-left">
+                <div className="grid grid-cols-1 ld:grid-cols-3 fap-4 lg:gap-2 text-left space-y-4">
                   <Input label="Pole tekstowe" placeholder="Wprowadź krótki tekst" name="input"/>
-                  <Select className="mt-3" label="Lista rozwijana" name="select" options={[{'value': 1, 'text': 'Pierwsza opcja'}, {'value': 2, 'text': 'Druga opcja'}]}/>
+                  <Select label="Lista rozwijana" name="select" options={[{'value': 1, 'text': 'Pierwsza opcja'}, {'value': 2, 'text': 'Druga opcja'}]}/>
                   <Textarea label="Pole tekstu rozszerzanego" placeholder="Wprowadź długi tekst" name="textarea" />
                   <Checkbox label="Wybierz tę opcję" name="checkbox" />
                   <Radio label="Zaznacz tę opcję" name="radio" />

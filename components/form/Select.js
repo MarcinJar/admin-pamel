@@ -1,6 +1,6 @@
-export default function Select({label = '', options = [], className = '', ...props}) {
+export default function Select({label = '', options = [], ...props}) {
   return (
-    <label className={className}>
+    <label>
       <span className="text-gray-500 text-sm block mb-1">
         {label}
       </span>
