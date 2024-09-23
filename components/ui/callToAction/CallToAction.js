@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CheckIcon from "../icon/CheckIcon";
 
 export default function CallToAction({title = '', subTitle = '', call = '', url = ''}) {
   return (
@@ -16,9 +17,8 @@ export default function CallToAction({title = '', subTitle = '', call = '', url 
         </div>
         <div className="mt-5 xl:mt-0 transition group-hover:transform group-hover:rotate-6">
           <Link href={url} className="btn btn-primary self-stretch">
-            <span className="ml-3">
-              {call}
-            </span>
+            <CheckIcon/>
+            <span className="ml-3">{call}</span>
           </Link>
         </div>
       </div>

@@ -45,7 +45,7 @@ export default function AppStatus() {
       <h6 className="text-green-100 flex justify-start">
         <OfficeIcon/>
         <span className="ml-1">
-          Nowe klienci
+          Nowi klienci
         </span>
       </h6>
       <p className="text-white text-5xl">
