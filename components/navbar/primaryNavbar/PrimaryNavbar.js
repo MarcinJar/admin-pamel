@@ -1,5 +1,6 @@
 import Logo from "@/components/logo/Logo"
 import MainMenu from "@/components/menu/mainMenu/MainMenu"
+import MenuIcon from "@/components/ui/icon/MenuIcon"
 import { useState } from "react"
 
 export default function PrimaryNavbar({className}) {
@@ -15,7 +16,7 @@ export default function PrimaryNavbar({className}) {
         <Logo/>
 
         <div className="flex justify-end relative w-3/4 md:hidden" onClick={handleOnClick}>
-          OTWÓRZ
+          <MenuIcon/>
           <div className={`absolute top-8 right-0 z-50 text-center ` + (!isVisible && 'hidden')}>
             <div className="bg-blue-800 p-5 rounded shadow-xl border border-blue-700 font-normal">
               <MainMenu/>
