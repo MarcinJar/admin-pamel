@@ -1,11 +1,13 @@
 import MainMenu from "@/components/menu/mainMenu/MainMenu";
 import PrimaryNavbar from "@/components/navbar/primaryNavbar/PrimaryNavbar";
+import SecondaryNavbar from "@/components/navbar/secondaryNavbar/SecondaryNavbar";
 
 export default function DefaultLayout({children, title = ''}) {
   return (
     <div className="flex flex-col h-screen">
       <div className="md:flex">
         <PrimaryNavbar/>
+        <SecondaryNavbar/>
       </div>
       <div className="flex flex-grow overflow-hidden">
         <div className="hidden md:flex items-start justify-between px-8 py-8 bg-blue-800
@@ -14,7 +16,7 @@ export default function DefaultLayout({children, title = ''}) {
             <MainMenu/>
           </dev>
         </div>
-        <div className="w-full overflow-hidden overflow-y-auto p-0 bg-gray=100 py-0 md:py-8">
+        <div className="w-full overflow-hidden overflow-y-auto p-0 bg-gray-100 py-0 md:py-8">
           <div className="p-4 md:py-0 md:px-12">
             <h2 className="text-2xl mb-3">
               {title}
