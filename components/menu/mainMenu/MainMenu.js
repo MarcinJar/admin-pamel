@@ -1,3 +1,4 @@
+import Modal from "@/components/ui/modal/Modal";
 import MainMenuItem from "./mainMenuItem/MainMenuItem";
 
 export default function MainMenu({className}) {
@@ -11,5 +12,7 @@ export default function MainMenu({className}) {
       <MainMenuItem url="/admin/questions">FAQ</MainMenuItem>
       <MainMenuItem url="/admin/contact">Kontakt</MainMenuItem>
     </ul>
+
+    <Modal buttonTitle="Usługi dodatkowe" title="Wybierz pakiet usług dodatkowych, który Ci odpowiada"/>
   </>
 }

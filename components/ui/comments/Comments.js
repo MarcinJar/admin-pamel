@@ -20,5 +20,5 @@ export default function Comments() {
         </Comment>
       </ul>
     </Card>
-  );
+  )
 }
