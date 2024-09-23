@@ -1,6 +1,7 @@
 import Card from "@/components/card/Card";
 import DefaultLayout from "@/components/layouts/defaultLayout/DefaultLayout";
 import AppStatus from "@/components/ui/appStatus/AppStatus";
+import CallToAction from "@/components/ui/callToAction/CallToAction";
 import Newsletter from "@/components/ui/newsletter/Newsletter";
 
 export default function Index() {
@@ -15,7 +16,14 @@ export default function Index() {
         <section className="grid gap-4">
           <Newsletter
             title="Chcesz być na bierząco?"
-            subTitle="Powiadomienia o naszych produktach trafią bezpośrednio na Twoją skrzynkę e-mail!"/>
+            subTitle="Powiadomienia o naszych produktach trafią bezpośrednio na Twoją skrzynkę e-mail!">
+          </Newsletter>
+          <CallToAction
+            title="Potrzebujesz pomocy eksperta?"
+            subTitle="Doradzimy, pomożemy!"
+            call="Skontaktuj się z nami!"
+            url="/admin/contact">
+          </CallToAction>
         </section>
       </div>
     </DefaultLayout>
