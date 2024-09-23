@@ -1,5 +1,6 @@
 import Logo from "@/components/logo/Logo"
 import MainMenu from "@/components/menu/mainMenu/MainMenu"
+import Footer from "@/components/ui/footer/Footer"
 import MenuIcon from "@/components/ui/icon/MenuIcon"
 import { useState } from "react"
 
@@ -20,6 +21,7 @@ export default function PrimaryNavbar({className}) {
           <div className={`absolute top-8 right-0 z-50 text-center ` + (!isVisible && 'hidden')}>
             <div className="bg-blue-800 p-5 rounded shadow-xl border border-blue-700 font-normal">
               <MainMenu/>
+              <Footer/>
             </div>
           </div>
         </div>

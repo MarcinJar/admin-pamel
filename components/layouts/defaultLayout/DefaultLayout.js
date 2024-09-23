@@ -1,6 +1,7 @@
 import MainMenu from "@/components/menu/mainMenu/MainMenu";
 import PrimaryNavbar from "@/components/navbar/primaryNavbar/PrimaryNavbar";
 import SecondaryNavbar from "@/components/navbar/secondaryNavbar/SecondaryNavbar";
+import Footer from "@/components/ui/footer/Footer";
 
 export default function DefaultLayout({children, title = ''}) {
   return (
@@ -14,6 +15,7 @@ export default function DefaultLayout({children, title = ''}) {
           text-blue-100 md:flex-shrink-0 md:w-56 md:justify-start">
           <dev className="relative">
             <MainMenu/>
+            <Footer/>
           </dev>
         </div>
         <div className="w-full overflow-hidden overflow-y-auto p-0 bg-gray-100 py-0 md:py-8">
