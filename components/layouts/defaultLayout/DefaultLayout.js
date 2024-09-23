@@ -1,10 +1,11 @@
 import MainMenu from "@/components/menu/mainMenu/MainMenu";
+import PrimaryNavbar from "@/components/navbar/primaryNavbar/PrimaryNavbar";
 
 export default function DefaultLayout({children, title = ''}) {
   return (
     <div className="flex flex-col h-screen">
       <div className="md:flex">
-        WIERSZ GÓRNY
+        <PrimaryNavbar/>
       </div>
       <div className="flex flex-grow overflow-hidden">
         <div className="hidden md:flex items-start justify-between px-8 py-8 bg-blue-800
