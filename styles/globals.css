@@ -1,7 +1,10 @@
 @import "tailwindcss/base";
+
 @import "tailwindcss/components";
 @import "components/separator.css";
 @import "components/button.css";
+@import "components/table.css";
+
 @import "tailwindcss/utilities";
 
 :root {
