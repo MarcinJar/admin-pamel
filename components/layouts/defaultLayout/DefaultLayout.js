@@ -1,6 +1,7 @@
 import MainMenu from "@/components/menu/mainMenu/MainMenu";
 import PrimaryNavbar from "@/components/navbar/primaryNavbar/PrimaryNavbar";
 import SecondaryNavbar from "@/components/navbar/secondaryNavbar/SecondaryNavbar";
+import Breadcrumbs from "@/components/ui/breadcrumbs/Breadcrumbs";
 import Footer from "@/components/ui/footer/Footer";
 
 export default function DefaultLayout({children, title = ''}) {
@@ -20,9 +21,8 @@ export default function DefaultLayout({children, title = ''}) {
         </div>
         <div className="w-full overflow-hidden overflow-y-auto p-0 bg-gray-100 py-0 md:py-8">
           <div className="p-4 md:py-0 md:px-12">
-            <h2 className="text-2xl mb-3">
-              {title}
-            </h2>
+            <Breadcrumbs title={title} />
+            
             <section>
               {children}
             </section>
