@@ -1,4 +1,5 @@
 import Card from "@/components/card/Card";
+import Pagination from "../../pagination/Pagination";
 
 export default function TableWrapper({children}) {
   return (
@@ -8,6 +9,8 @@ export default function TableWrapper({children}) {
           {children}
         </table>
       </Card>
+
+      <Pagination/>
     </div>
   )
 }

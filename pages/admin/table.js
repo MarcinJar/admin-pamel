@@ -14,6 +14,7 @@ export default function Table() {
             <Th>Adres Email</Th>
             <Th>Telefon</Th>
             <Th>Data rejestracji</Th>
+            <Th/>
           </tr>
         </thead>
         <tbody>
@@ -23,6 +24,11 @@ export default function Table() {
             <Td>jan.kowalski@example.com</Td>
             <Td>670-123-853</Td>
             <Td>2022-01-01</Td>
+            <Td className="td-actions">
+              <a href="#" className="btn btn-sm btn-info">
+                Zobacz
+              </a>
+            </Td>
           </tr>
           <tr>
             <Td>Anna</Td>
@@ -30,6 +36,11 @@ export default function Table() {
             <Td>anna.nowak@example.com</Td>
             <Td>555-987-253</Td>
             <Td>2021-12-31</Td>
+            <Td className="td-actions">
+              <a href="#" className="btn btn-sm btn-info">
+                Zobacz
+              </a>
+            </Td>
           </tr>
           <tr>
             <Td>Adam</Td>
@@ -37,7 +48,24 @@ export default function Table() {
             <Td>adam.słoneczny@example.com</Td>
             <Td>450-000-666</Td>
             <Td>2021-10-12</Td>
-          </tr>            
+            <Td className="td-actions">
+              <a href="#" className="btn btn-sm btn-info">
+                Zobacz
+              </a>
+            </Td>
+          </tr>      
+          <tr>
+            <Td>Katarzyna</Td>
+            <Td>Janik</Td>
+            <Td>kasia.janik@example.com</Td>
+            <Td>520-121-853</Td>
+            <Td>2023-03-01</Td>
+            <Td className="td-actions">
+              <a href="#" className="btn btn-sm btn-info">
+                Zobacz
+              </a>
+            </Td>
+          </tr>      
         </tbody>
       </TableWrapper>
     </DefaultLayout>
