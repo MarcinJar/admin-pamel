@@ -5,6 +5,7 @@
 @import "components/button.css";
 @import "components/table.css";
 @import "components/article.css";
+@import "components/alert.css";
 
 @import "tailwindcss/utilities";
 
