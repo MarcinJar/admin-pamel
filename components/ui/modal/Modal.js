@@ -6,12 +6,10 @@ export default function Modal({title = '', buttonTitle = 'Otwórz okno', childre
   const [isVisible, setIsVisible] = useState(false)
 
   function handleOnOpenClick() {
-    console.log("handleOnOpenClick");
     setIsVisible(true);
   }
 
   function handleOnCloseClick() {
-    console.log("handleOnCloseClick");
     setIsVisible(false);
   }
 

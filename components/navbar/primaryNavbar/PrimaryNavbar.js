@@ -16,8 +16,8 @@ export default function PrimaryNavbar({className}) {
       border-blue-700 shadow z-30 p-4 md:flex-shrink-0 md:w-56 md:py-0 md:px-8 md:justify-start">
         <Logo/>
 
-        <div className="flex justify-end relative w-3/4 md:hidden" onClick={handleOnClick}>
-          <MenuIcon/>
+        <div className="flex justify-end relative w-3/4 md:hidden">
+          <MenuIcon onClick={handleOnClick}/>
           <div className={`absolute top-8 right-0 z-50 text-center ` + (!isVisible && 'hidden')}>
             <div className="bg-blue-800 p-5 rounded shadow-xl border border-blue-700 font-normal">
               <MainMenu/>
