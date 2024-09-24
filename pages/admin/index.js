@@ -4,6 +4,7 @@ import AppStatus from "@/components/ui/appStatus/AppStatus";
 import CallToAction from "@/components/ui/callToAction/CallToAction";
 import Comments from "@/components/ui/comments/Comments";
 import Newsletter from "@/components/ui/newsletter/Newsletter";
+import Spinner from "@/components/ui/spinner/Spinner";
 
 export default function Index() {
   return (
@@ -25,7 +26,25 @@ export default function Index() {
             call="Skontaktuj się z nami!"
             url="/admin/contact">
           </CallToAction>
+          <Card>
+            <div className="text-center">
+              <div className="text-center pt-3 flex justify-center">
+                <div className="w-10">
+                  <Spinner/>
+                </div>
+              </div>
+              <div className="mt-5">
+                <strong>
+                  Trwa pobieranie danych z serwera.
+                </strong>
+              </div>
+              <p className="text-gray-500">
+                Proszę czekać...
+              </p>
+            </div>
+          </Card>
         </section>
+        
         <Comments/>
       </div>
     </DefaultLayout>
