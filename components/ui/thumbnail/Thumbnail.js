@@ -1,14 +1,17 @@
 import Card from "@/components/card/Card";
 import EyeIcon from "../icon/EyeIcon";
 import ShareIcon from "../icon/ShareIcon";
+import { useEffect, useState } from "react";
 
 export default function Thumbnail({src = '', title = ''}) {
-  const [random, setRandom] = useState(0);
+  const [views, setViews] = useState(0);
+  const [download, setDonwload] = useState(0);
 
   useEffect(() => {
-    setRandom(Math.floor(Math.random() * 15));
+    setViews(Math.floor(Math.random() * 15));
+    setDonwload(Math.floor(Math.random() * 15));
   }, []);
-  
+
   return (
     <Card className="transition group hover:scale-105">
       <div className="mb-5 relative">
@@ -19,14 +22,14 @@ export default function Thumbnail({src = '', title = ''}) {
           <div className="flex justify-end" title="Wyświetlenia">
             <EyeIcon/>
             <strong>
-              {random}
+              {views}
             </strong>
           </div>
 
           <div className="flex justify-start" title="Pobrania">
             <ShareIcon/>
             <strong>
-              {random}
+              {download}
             </strong>
           </div>
         </div>
