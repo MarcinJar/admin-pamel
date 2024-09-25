@@ -3,6 +3,12 @@ import EyeIcon from "../icon/EyeIcon";
 import ShareIcon from "../icon/ShareIcon";
 
 export default function Thumbnail({src = '', title = ''}) {
+  const [random, setRandom] = useState(0);
+
+  useEffect(() => {
+    setRandom(Math.floor(Math.random() * 15));
+  }, []);
+  
   return (
     <Card className="transition group hover:scale-105">
       <div className="mb-5 relative">
@@ -13,14 +19,14 @@ export default function Thumbnail({src = '', title = ''}) {
           <div className="flex justify-end" title="Wyświetlenia">
             <EyeIcon/>
             <strong>
-              {Math.floor(Math.random() * 15)}
+              {random}
             </strong>
           </div>
 
           <div className="flex justify-start" title="Pobrania">
             <ShareIcon/>
             <strong>
-              {Math.floor(Math.random() * 15)}
+              {random}
             </strong>
           </div>
         </div>
